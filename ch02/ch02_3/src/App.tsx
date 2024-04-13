@@ -1,11 +1,11 @@
-// 함수형 컴포넌트
-/* export default function App() {
-  return <div>Hello function-keyword component!</div>
-} */
+import ArrowComponent from "./ArrowComponent";
+import ClassComponent from "./ClassComponent";
 
-// 화살표형 컴포넌트
-const App = () => {
-  return <h1>function component</h1>
+export default function App() {
+  return(
+    <ul>
+      <ClassComponent href="http://www.google.com" text="go to Google" />
+      <ArrowComponent href="https://www.instagram.com/" text="go to Instagram" />
+    </ul>
+  )
 }
-
-export default App
